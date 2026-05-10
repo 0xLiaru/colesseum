@@ -1,0 +1,31 @@
+{
+  "name": "proof_of_dare",
+  "version": "0.1.0",
+  "description": "Proof of Dare - Solana Challenge Protocol",
+  "main": "index.js",
+  "scripts": {
+    "lint:fix": "prettier */*.js  */*.ts */*/*.js */*/*.ts --write",
+    "test": "anchor test"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@privy-io/react-auth": "^3.23.1",
+    "@solana-program/compute-budget": "^0.15.0",
+    "@solana-program/memo": "^0.11.0",
+    "@solana-program/system": "^0.12.0",
+    "@solana-program/token": "^0.13.0",
+    "@solana/kit": "^6.9.0",
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.4",
+    "@supabase/supabase-js": "^2.105.3"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.3.5"
+  }
+}

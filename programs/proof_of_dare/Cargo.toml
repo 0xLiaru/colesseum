@@ -1,0 +1,30 @@
+[package]
+name = "proof_of_dare"
+version = "0.1.0"
+description = "ProofOfDare (PoD) Escrow and Challenge Protocol"
+edition = "2021"
+rust-version = "1.75.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "proof_of_dare"
+
+[features]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"
+borsh_lib = { version = "=1.5.3", package = "borsh" }
+num_enum = "=0.7.2"
+toml_edit = "=0.20.2"
+indexmap = "=2.2.6"
+blake3 = "=1.7.0"
+solana-program = "=1.18.26"
+solana-zk-token-sdk = "=1.18.26"
+unicode-segmentation = "=1.11.0"
+serde = "=1.0.210"
+
+
+
+[dev-dependencies]

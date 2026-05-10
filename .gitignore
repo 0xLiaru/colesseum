@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.anchor/
+target/
+test-ledger/
+
+# Rust/Cargo
+Cargo.lock
+**/target/
+**/*.rs.bk
+
+# Next.js
+blink-api/node_modules/
+blink-api/.next/
+blink-api/.env
+
+# Local Environment
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
