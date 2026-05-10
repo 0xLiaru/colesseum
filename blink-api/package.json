@@ -30,11 +30,11 @@
     "tailwindcss": "^4"
   },
   "devDependencies": {
+    "typescript": "5.8.2",
     "@types/node": "^20",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
     "eslint": "^9",
-    "eslint-config-next": "^15.1.7",
-    "typescript": "^5"
+    "eslint-config-next": "^15.1.7"
   }
 }
