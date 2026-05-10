@@ -11,8 +11,8 @@ import {
     Transaction, 
     LAMPORTS_PER_SOL 
 } from "@solana/web3.js";
-import { PROGRAM_ID, CONNECTION, BASE_URL } from "@/lib/solana";
-import { supabase } from "@/lib/supabase";
+import { PROGRAM_ID, CONNECTION, BASE_URL } from "../../../../lib/solana";
+import { supabase } from "../../../../lib/supabase";
 import * as anchor from "@coral-xyz/anchor";
 
 export const GET = async (req: Request) => {

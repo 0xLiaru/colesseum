@@ -10,8 +10,8 @@ import {
     Transaction,
     SystemProgram
 } from "@solana/web3.js";
-import { PROGRAM_ID, CONNECTION, BASE_URL } from "@/lib/solana";
-import { supabase } from "@/lib/supabase";
+import { PROGRAM_ID, CONNECTION, BASE_URL } from "../../../../lib/solana";
+import { supabase } from "../../../../lib/supabase";
 
 export const GET = async (req: Request) => {
     const url = new URL(req.url);

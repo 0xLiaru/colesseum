@@ -2,10 +2,10 @@
 
 import { usePrivy, useWallets } from '@privy-io/react-auth';
 import { useEffect, useState, useMemo } from "react";
-import { CONNECTION } from "@/lib/solana";
+import { CONNECTION } from "../lib/solana";
 import { PublicKey, LAMPORTS_PER_SOL, SystemProgram, Transaction } from "@solana/web3.js";
 import { getAssociatedTokenAddressSync, createTransferCheckedInstruction, createAssociatedTokenAccountInstruction } from "@solana/spl-token";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "../lib/supabase";
 
 const CATEGORIES = [
     { id: 'Sports', label: 'Sports', icon: '🏋️‍♂️', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800' },
