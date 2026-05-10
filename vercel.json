@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd blink-api && npm install && npm run build",
+  "outputDirectory": "blink-api/.next",
+  "framework": "nextjs"
+}
