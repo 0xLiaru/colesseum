@@ -30,10 +30,6 @@ export default function PrivyWrapper({ children }: { children: ReactNode }) {
         },
         solanaClusters: [
           {
-            name: 'testnet',
-            rpcUrl: 'https://api.testnet.solana.com'
-          },
-          {
             name: 'devnet',
             rpcUrl: 'https://api.devnet.solana.com'
           }
