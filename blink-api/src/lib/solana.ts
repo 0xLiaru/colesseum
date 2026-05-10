@@ -8,11 +8,10 @@ export const BASE_URL = typeof window !== 'undefined'
     ? window.location.origin 
     : (process.env.NEXT_PUBLIC_BASE_URL || 'https://pod-protocol.vercel.app');
 
-// Artık doğrudan dışarıya değil, kendi oluşturduğumuz güvenli köprüye (proxy) bağlanıyoruz.
-export const RPC_ENDPOINT = typeof window !== 'undefined' 
-    ? `${window.location.origin}/api/rpc` 
-    : "https://api.testnet.solana.com"; 
+// RPC Adresi - Öncelik .env dosyasındaki adreste
+export const RPC_ENDPOINT = process.env.NEXT_PUBLIC_SOLANA_RPC || "https://api.mainnet-beta.solana.com";
 
 export const CONNECTION = new Connection(RPC_ENDPOINT, {
-    commitment: "confirmed"
+    commitment: "confirmed",
+    confirmTransactionInitialTimeout: 60000
 });
